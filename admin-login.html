@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="result-check.html">Result Check</a></li>
+            <li><a href="admin-login.html">Admin Login</a></li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <div id="admin-login">
+            <h2>Admin Login</h2>
+            <input type="password" id="admin-password" placeholder="Enter Password">
+            <button onclick="adminLogin()">Login</button>
+        </div>
+
+        <div id="admin-panel" style="display:none;">
+            <h2>Admin Panel</h2>
+            <input type="text" id="student-roll-no" placeholder="Enter Roll No">
+            <input type="text" id="student-total-marks" placeholder="Enter Total Marks">
+            <input type="text" id="student-obtained-marks" placeholder="Enter Obtained Marks">
+            <button onclick="addResult()">Submit Result</button>
+            <div id="result-list"></div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
+
+
